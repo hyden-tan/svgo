@@ -44,7 +44,7 @@ plugins:
  * @author April Arcus
  */
 exports.fn = function(data, params) {
-    if (!params || !(Array.isArray(params.attributes) || params.attribute)) {
+    if (!params || !(Array.isArray(params.attributes) || !params.attribute)) {
         console.error(ENOCLS);
         return data;
     }
